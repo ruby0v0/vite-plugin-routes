@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["ESNext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "strict": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src/**/*", "*.d.ts"],
+  "exclude": ["node_modules", "examples", "dist"]
+}

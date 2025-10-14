@@ -1,10 +1,10 @@
 {
   "name": "vue",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "nodemon --watch ../../dist/*.esm.js -e js --exec 'vite'",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
@@ -15,9 +15,10 @@
     "@types/node": "^24.6.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
+    "nodemon": "^3.1.10",
     "typescript": "~5.9.3",
     "vite": "^7.1.7",
-    "vue-tsc": "^3.1.0",
-    "vite-plugin-routes": "workspace:*"
+    "vite-plugin-routes": "workspace:*",
+    "vue-tsc": "^3.1.0"
   }
 }

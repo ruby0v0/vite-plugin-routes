@@ -1,19 +1,37 @@
 {
   "name": "vite-plugin-routes",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Automatically generate a vite plugin for vue-router",
+  "author": "ruby0v0",
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "vue",
+    "vue-router",
+    "plugin",
+    "routes"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "rollup -c --watch --watch.exclude examples/**",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "type-check": "tsc --noEmit"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "devDependencies": {
+    "@antfu/eslint-config": "^5.4.1",
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^9.36.0",
+    "eslint-plugin-format": "^1.0.1",
     "rollup": "^4.52.4",
     "vite": "^7.1.9"
   }
