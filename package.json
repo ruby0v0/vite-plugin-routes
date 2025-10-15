@@ -1,5 +1,6 @@
 {
   "name": "vite-plugin-routes",
+  "type": "module",
   "version": "1.0.0",
   "description": "Automatically generate a vite plugin for vue-router",
   "author": "ruby0v0",
@@ -11,6 +12,16 @@
     "plugin",
     "routes"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./client": {
+      "types": "./client.d.ts"
+    }
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -30,9 +41,12 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.4",
     "eslint": "^9.36.0",
     "eslint-plugin-format": "^1.0.1",
     "rollup": "^4.52.4",
-    "vite": "^7.1.9"
+    "vite": "^7.1.9",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.0"
   }
 }

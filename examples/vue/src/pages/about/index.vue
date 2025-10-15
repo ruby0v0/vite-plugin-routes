@@ -1,9 +1,11 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
   <div>
-    <router-view />
+    <NavBar />
+    <h1>About</h1>
   </div>
 </template>
 
