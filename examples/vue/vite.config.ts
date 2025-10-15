@@ -3,7 +3,5 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue({
-    include: [/\.vue$/, /\.md$/],
-  })],
+  plugins: [vue()],
 })
